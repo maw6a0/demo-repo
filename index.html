@@ -1,7 +1,43 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <script>
+        function changeTextColor(newColor){
+            let x = document.getElementById("Colorable");
+            x.style.color = newColor;
+        }
+    </script>
+    <style>
+    h1 {
+        color: green;
+        background-color: lightgrey;
+        font-size: 12pt;
+    }
+    p {
+        font-family:Arial;
+        margin-left: 10px;
+    }
+    strong {
+        background-color:lightgreen;
+        padding: 5px;
+    }
+    </style>
+    <title>Basketball</title>
+    <link rel="icon" href="NBA_Logo - Copy.png">
+    <body>
+        <img src="NBA_Logo.jpg" alt="NBA" width="500" height="285"> 
+        <h1 id="Colorable">NBA League Pass Link</h1>
+        <p><a href="https://watch.nba.com/packages">NBA League Pass</a></p>
+        <p>Change heading color to:
+            <button type="button" onclick="changeTextColor('yellow')">Yellow</button>
+            <button type="button" onclick="changeTextColor('purple')">Purple</button>
+            <button type="button" onclick="changeTextColor('blue')">Blue</button>
+            <button type="button" onclick="changeTextColor('red')">Red</button>
+            <button type="button" onclick="changeTextColor('green')">Green</button>
+            <button type="button" onclick="changeTextColor('orange')">Orange</button>
+        </p>
 
-<div>Hello World</div>
-
-
+        <h1 id="Colorable">GOAT Link</h1>
+        <p><a href="https://www.goat.com/">GOAT</a></p>
+    </body>
 </html>
